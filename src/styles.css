@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #ede7f6);
+  background-attachment: fixed;
+
+
+.mat-mdc-raised-button.mat-primary {
+  background: linear-gradient(135deg, #3f51b5, #283593) !important;
+  color: white !important;
+}
+
+.mat-mdc-raised-button.mat-warn {
+  background: linear-gradient(135deg, #f44336, #b71c1c) !important;
+  color: white !important;
+}
+
+.mat-mdc-raised-button.mat-accent {
+  background: linear-gradient(135deg, #43a047, #2e7d32) !important;
+  color: white !important;
+}
+
+
+.mat-mdc-raised-button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+}

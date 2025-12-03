@@ -1,5 +1,5 @@
 {
-  "name": "projeto-quality",
+  "name": "projeto-alunos",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:projeto-quality": "node dist/projeto-quality/server/server.mjs"
+    "serve:ssr:projeto-alunos": "node dist/projeto-alunos/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
@@ -23,20 +23,25 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.9",
+    "@angular/cdk": "^20.2.10",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
-    "@angular/forms": "^20.3.0",
+    "@angular/forms": "^20.3.9",
+    "@angular/material": "^20.2.10",
     "@angular/platform-browser": "^20.3.0",
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.8",
     "express": "^5.1.0",
+    "ngx-mask": "^20.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.8",
     "@angular/build": "^20.3.8",
     "@angular/cli": "^20.3.8",
     "@angular/compiler-cli": "^20.3.0",

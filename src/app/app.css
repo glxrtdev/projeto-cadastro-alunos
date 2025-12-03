@@ -1,0 +1,160 @@
+
+:root {
+  --primary-color: #3f51b5; 
+  --primary-dark: #283593;
+  --accent-color: #e91e63; 
+  --danger-color: #f44336; 
+  --background-light: #f3f5fa;
+  --container-bg: #ffffff;
+  --text-dark: #333;
+  --border-radius: 10px;
+  --transition: all 0.25s ease;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 1100px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 40px rgba(63, 81, 181, 0.2);
+}
+
+
+h1 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1.2rem 1.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.formulario mat-form-field {
+  width: 100%;
+}
+
+.botoes {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button[mat-raised-button] {
+  min-width: 130px;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  color: #fff;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[mat-raised-button]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+button[color="primary"] {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+button[color="warn"] {
+  background: linear-gradient(135deg, var(--danger-color), #b71c1c);
+}
+ 
+
+.tabela-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+th.mat-header-cell {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td.mat-cell,
+th.mat-header-cell {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+}
+
+tr.mat-row:hover {
+  background-color: #f5f7ff;
+  transition: 0.2s;
+}
+
+
+button[mat-icon-button] {
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+button[mat-icon-button]:hover {
+  background-color: rgba(63, 81, 181, 0.15);
+  transform: scale(1.1);
+}
+
+.center {
+  text-align: center;
+}
+
+.sem-dados {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 1.5rem;
+  background: #fafafa;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.2rem;
+  }
+  
+@media (max-width: 900px) {
+  .formulario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ }
+
+  th.mat-header-cell,
+  td.mat-cell {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  button[color="accent"] {
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+}
+
+}
